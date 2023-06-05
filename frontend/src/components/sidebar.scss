@@ -1,0 +1,33 @@
+.sidebar {
+    width: max-content;
+
+    .sidebar_header {
+        padding: 20px;
+        font-family: cursive;
+        font-style: italic;
+
+        &::first-letter {
+            color: #f50057;
+            font-size: 30px;
+        }
+    }
+
+    .list_option {
+        padding-top: 10%;
+
+        .option {
+            display: flex;
+            flex-direction: column;
+            padding-left: 15%;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 5px;
+
+            >div {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+}
