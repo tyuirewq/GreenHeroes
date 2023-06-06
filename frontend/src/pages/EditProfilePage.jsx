@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './page-css/edit-profile-page.scss';
+import MainDashboard from '../components/MainDashboard';
 
 const EditProfilePage = () => {
   const [name, setName] = useState('');
@@ -31,6 +32,7 @@ const EditProfilePage = () => {
   };
 
   return (
+<MainDashboard>
     <div className='edit-profile-page'>
       <h2>Edit Profile</h2>
       <div className="edit-profile-form">
@@ -72,7 +74,7 @@ const EditProfilePage = () => {
         <br />
         <button type="submit">Save</button>
       </form></div>
-    </div>
+    </div></MainDashboard>
   );
 };
 

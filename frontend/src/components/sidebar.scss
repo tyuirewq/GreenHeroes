@@ -1,5 +1,5 @@
 .sidebar {
-    width: max-content;
+    width: 260px;
 
     .sidebar_header {
         padding: 20px;
@@ -20,13 +20,22 @@
             flex-direction: column;
             padding-left: 15%;
             align-items: flex-start;
-            gap: 10px;
+            gap: 15px;
             margin: 5px;
 
             >div {
                 display: flex;
                 align-items: center;
                 gap: 10px;
+            }
+
+            .link{
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: #f50057;
+                }
             }
         }
     }

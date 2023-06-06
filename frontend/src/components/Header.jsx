@@ -1,5 +1,6 @@
 // import React, { useState } from 'react'
 import './headercss.css'
+import { Link } from 'react-router-dom';
 import myImage from './../image/logo.jpg';
 import MenuIcon from '@mui/icons-material/Menu'
 import SearchIcon from '@mui/icons-material/SearchOutlined'
@@ -31,7 +32,7 @@ const Header = ({toggleSidebar, isOpen }) => {
         <div className="header-icons">
           <button className="notification-icon"><Notification /></button>
           <button className="profile-icon"><ProfileIcon /></button>
-          <button className="logout-icon"><LogoutIcon /></button>
+          <Link to="/" style={{textDecoration:"none"}}><button className="logout-icon"> <LogoutIcon/></button></Link> 
         </div>
       </div>
     </header>

@@ -6,6 +6,10 @@ import LoginPage from './pages/LoginPage';
 import RegistrationPage from './pages/RegistrationPage';
 import EditProfilePage from './pages/EditProfilePage';
 import RankingPage from './pages/RankingPage';
+import RulesPage from './pages/RulesPage';
+import BenefitsPage from './pages/BenefitsPage';
+import UploadPage from './pages/UploadPage';
+import ActivityPage from './pages/ActivityPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -17,7 +21,11 @@ function App() {
           <Route exact path='/registration' element={<RegistrationPage />} />
           <Route exact path='/edit' element={<EditProfilePage />} />
           <Route exact path='/rank' element={<RankingPage />} />
+          <Route exact path='/rules' element={<RulesPage />} />
+          <Route exact path='/upload' element={<UploadPage />} />
+          <Route exact path='/benefits' element={<BenefitsPage />} />
           <Route exact path='/Home' element={<MainDashboard />} />
+          <Route exact path='/activity' element={<ActivityPage />} />
           {/* <BrowserRouter>
       <Routes>
       <Route path='/' element={<MainContent/>}>
