@@ -1,7 +1,5 @@
 import './App.css';
-// import Sidebar from './components/Sidebar';
-// import Header from './components/Header';
-import MainDashboard from './components/MainDashboard';
+import MainDashboard from './pages/MainDashboard';
 import LoginPage from './pages/LoginPage';
 import RegistrationPage from './pages/RegistrationPage';
 import EditProfilePage from './pages/EditProfilePage';
@@ -10,6 +8,7 @@ import RulesPage from './pages/RulesPage';
 import BenefitsPage from './pages/BenefitsPage';
 import UploadPage from './pages/UploadPage';
 import ActivityPage from './pages/ActivityPage';
+import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -26,6 +25,7 @@ function App() {
           <Route exact path='/benefits' element={<BenefitsPage />} />
           <Route exact path='/Home' element={<MainDashboard />} />
           <Route exact path='/activity' element={<ActivityPage />} />
+          <Route exact path='/navbar' element={<Navbar />} />
           {/* <BrowserRouter>
       <Routes>
       <Route path='/' element={<MainContent/>}>

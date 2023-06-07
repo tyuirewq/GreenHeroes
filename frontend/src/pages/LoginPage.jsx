@@ -66,18 +66,19 @@ import './page-css/login-page.scss';
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [isCorrect, setIsCorrect] = useState(false);
   // const [captchaValue, setCaptchaValue] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email === 'admin@gmail.com' && password === 'admin') {
-      alert('Login successful');
+      // alert('Login successful');
       // Redirect the user to the main content page after successful login
       // (We will implement this in the next section)
       window.location.href = '/Home';
     }
     else {
-      alert('Login failed');
+      setIsCorrect(true);
     }
     // Perform login logic here
 
@@ -110,6 +111,7 @@ const LoginPage = () => {
           <br />
           {/* <ReCAPTCHA sitekey="6Ldvj2QmAAAAADOdRdAAnlhq2QaAl5z3wdgjRXPl" domain="192.168.56.1" onChange={(value) => setCaptchaValue(value)} />
         <br /> */}
+          {isCorrect && <p style={{ color: 'red' }}>Email or Password is incorrect</p>}
         <div className="buttons">
           <button type="submit">Login</button>
           <a href='/registration'>Register Yourself</a></div>

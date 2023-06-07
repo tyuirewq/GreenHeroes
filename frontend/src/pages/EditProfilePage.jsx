@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './page-css/edit-profile-page.scss';
-import MainDashboard from '../components/MainDashboard';
+import MainDashboard from '../pages/MainDashboard';
 
 const EditProfilePage = () => {
   const [name, setName] = useState('');

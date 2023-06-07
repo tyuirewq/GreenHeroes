@@ -1,5 +1,5 @@
 import React from 'react'
-import MainDashboard from '../components/MainDashboard'
+import MainDashboard from '../pages/MainDashboard'
 
 const RulesPage = () => {
   return (

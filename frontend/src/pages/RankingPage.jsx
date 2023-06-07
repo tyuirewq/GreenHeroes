@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './page-css/ranking-page.scss';
-import MainDashboard from '../components/MainDashboard';
+import MainDashboard from './MainDashboard';
 import Image from './../image/logo_4.jpg'
 
 const RankingPage = () => {

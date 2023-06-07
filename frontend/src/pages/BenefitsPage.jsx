@@ -1,4 +1,4 @@
-import MainDashboard from "../components/MainDashboard"
+import MainDashboard from "../pages/MainDashboard"
 
 const BenefitsPage = () => {
   return (
